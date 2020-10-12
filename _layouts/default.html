@@ -35,11 +35,7 @@
     </div>
 
     <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
 <div class="sidebar" id="sidebar">
   <nav class="sidebar-nav">
    <h3 class="category-topic">Topics/</h3>
@@ -51,8 +47,9 @@
      </a>
     {% endfor %}
   </nav>
-
 </div>
+      {{ content }}
+    </div>
 
     <div class="wrapper-footer">
       <div class="container">
