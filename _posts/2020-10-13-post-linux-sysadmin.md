@@ -11,3 +11,8 @@ categories:
   * List files in an **installed** rpm: `rpm -ql postgresql12-server.x86_64 | grep conf`
   * Idenitfy the package a file came from: `rpm -qf /usr/bin/svn`
   * Install an rpm, and automatically install any dependencies (via yum): `yum --nogpgcheck localinstall VirtualBox-6.1-6.1.12_139181_el8-1.x86_64.rpm` 
+* **systemd**:  
+  * Debug service startup faiure: `journalctl -xe -u redis`
+  * List all services: `systemctl list-unit-files | grep -i postgres`    
+  * Example config file path: `/usr/lib/systemd/system/MFSafeNet.service`
+  
