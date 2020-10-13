@@ -4,6 +4,7 @@ title: Linux Sysadmin
 categories:
   - Linux
 ---
+* [Cron](https://opensource.com/article/17/11/how-use-cron-linux)
 * rpm:  
   * List installed packages: `rpm -qa`
   * List files in an **uninstalled** rpm: `rpm -qpl ./BaseOS/Packages/yum-utils-4.0.8-3.el8.noarch.rpm`  
