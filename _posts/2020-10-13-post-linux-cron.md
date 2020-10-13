@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cron
+title: Linux Cron
 categories:
   - Linux
 ---
