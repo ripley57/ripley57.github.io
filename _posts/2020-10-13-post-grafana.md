@@ -25,3 +25,8 @@ categories:
 * [Prometheus vs InfluxDB](https://www.metricfire.com/blog/prometheus-vs-influxdb/):  
 ME: Both are time-series databases. They have different SQL-like query languages; Prometheus's language is briefer than InfluxDB; for example there are functions such as "sum", "avg" and "topk". The main difference is that Prometheus 'scrapes targets' to retrieve the metrics, whereas InfluxDB expects the metrics to be 'pushed' to it, for example using Telegraf. 
 * [Windows download](https://grafana.com/grafana/download?platform=windows)
+* Influxdb:  
+  * [My notes regarding querying the databases created in InfluxDB](https://github.com/ripley57/MF/blob/master/Influxdb.md)
+  * [Introduction to Telegraf / InfluxDB](https://docs.influxdata.com/telegraf/v1.14/introduction/)
+  * Database(s) location: `C:\Users\testing\.influxdb` 
+  * Dropping databases (untested by me): https://community.influxdata.com/t/commad-to-delete-a-particular-series-from-influxdb/5600/7
