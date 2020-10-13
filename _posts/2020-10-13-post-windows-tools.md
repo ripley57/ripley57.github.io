@@ -9,4 +9,5 @@ categories:
 * **md5**:  
   * Different ways to generate an md5 checksum:  
   `d:\sysinternals\sigcheck.exe -h c:\temp\appurl.exe`    
-  `certutil.exe -hashfile c:\temp\appurl.exe md5`   
+  `certutil.exe -hashfile c:\temp\appurl.exe md5` 
+* [Tree Size (free) download](https://www.jam-software.com/treesize_free)
