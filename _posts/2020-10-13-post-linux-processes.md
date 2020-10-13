@@ -6,6 +6,8 @@ categories:
 ---
 * **pstree**:  
   * See child processes: `pstree -pa` (see also `/proc/<parent-pid>/task/`)
+* **shared memory**:  
+  * [ipcs command](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/tuning_and_optimizing_red_hat_enterprise_linux_for_oracle_9i_and_10g_databases/sect-oracle_9i_and_10g_tuning_guide-setting_shared_memory-removing_shared_memory)
 * **strace**:  
   * Follow child processes (-ff), capture child process output in separate files (-o), and don't truncate the strings (-v -s 1024):      
   `strace -v -s 1024 -o test -ff casstart /rTPCCDBFH /uSYSAD /pSYSAD`  
