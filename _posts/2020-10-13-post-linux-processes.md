@@ -9,6 +9,11 @@ categories:
 * **strace**:  
   * Follow child processes (-ff), capture child process output in separate files (-o), and don't truncate the strings (-v -s 1024):      
   `strace -v -s 1024 -o test -ff casstart /rTPCCDBFH /uSYSAD /pSYSAD`  
+* **sysctl**:  
+  * [Updating /etc/sysctl.conf](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/kernel_administration_guide/working_with_sysctl_and_kernel_tunables):  
+  1. Use `sysctl -a` to get the full name.  
+  2. Add the new value to `/etc/sysctl.d/99-custom.conf` (Note: On my system, this is a symbolic link to `/etc/sysctl.conf`).  
+  3. Reboot (alternatively, to avoid the reboot for now, run: `sysctl -p /etc/sysctl.d/99-custom.conf`).  
 * [UID/GID of running process](https://unix.stackexchange.com/questions/333598/how-could-one-determine-uid-gid-of-running-process):  
   `cat /proc/<PID>/status (the first two values are real and then effective id)`  
   `Uid: 0 0 0 0`  
