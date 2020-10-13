@@ -18,4 +18,13 @@ categories:
   `--------          ---- ------------`  
   `C:        506333229056       181282`  
   `D:       2000263573504      1722109`  
-  
+* Robocopy
+  * [robocopy syntax](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc733145(v=ws.11)?redirectedfrom=MSDN)  
+  * Mirror directories (and preserve timestamps, for files and dirs):  
+  `robocopy \\source_dir \\dest_dir /MIR /COPY:DT /DCOPY:DT /E`  
+  * Copy specific files from the top-level folder (not subdirs):  
+  `robocopy \\nwb-xtest\public\ D:\public\ /COPY:DT /DCOPY:DT /E /LEV:1 OpenJDK*`  
+  * Non-mirror normal copy, with sub-dir and file not overwritten:  
+  `robocopy \\nwb-xtest\c$\Inetpub\wwwroot\ C:\Inetpub\wwwroot\ /COPY:DT /DCOPY:DT /E /XD "aspnet_client" /XF "iisstart.htm"`  
+  * Mirroring svn files (exclude ".svn" dirs, creation "C:\automation" dir, don't list folder names:  
+  `robocopy \\nwb-xtest\c$\automation\ C:\automation /MIR /COPY:DAT /DCOPY:DAT /E /XD ".svn" /NDL`
