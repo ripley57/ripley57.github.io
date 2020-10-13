@@ -4,6 +4,9 @@ title: Linux Processes
 categories:
   - Linux
 ---
+* **environment variables in a process**:  
+  `[rhel7tpcc-hub]cat /proc/29640/environ | tr '\0' '\n' | grep COBPATH`  
+  `COBPATH=/home/hub/pkg_260324_es/lib/es`  
 * **pstree**:  
   * See child processes: `pstree -pa` (see also `/proc/<parent-pid>/task/`)
 * **shared memory**:  
