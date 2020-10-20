@@ -5,7 +5,7 @@ categories:
   - Linux
 ---
 * [Cron](https://opensource.com/article/17/11/how-use-cron-linux)
-* rpm:  
+* **rpm**:  
   * List installed packages: `rpm -qa`
   * List files in an **uninstalled** rpm: `rpm -qpl ./BaseOS/Packages/yum-utils-4.0.8-3.el8.noarch.rpm`  
   * List files in an **installed** rpm: `rpm -ql postgresql12-server.x86_64 | grep conf`
@@ -15,4 +15,10 @@ categories:
   * Debug service startup faiure: `journalctl -xe -u redis`
   * List all services: `systemctl list-unit-files | grep -i postgres`    
   * Example config file path: `/usr/lib/systemd/system/MFSafeNet.service`
+* **yum**:
+  * List all available versions of each package, rather than the most recent version:  
+  `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" list available`
+  * Install a package version that is not the most recent:  
+  `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" install postgresql10-server-10.12`  
+  **Note:** Take the package base name (e.g. "postgresql10-server") and then add the version (e.g. "10.12"). See also [here](https://unix.stackexchange.com/questions/151689/how-can-i-instruct-yum-to-install-a-specific-version-of-package-x).
   
