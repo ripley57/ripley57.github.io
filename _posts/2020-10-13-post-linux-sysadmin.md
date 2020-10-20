@@ -20,5 +20,7 @@ categories:
   `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" list available`
   * Install a package version that is not the most recent:  
   `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" install postgresql10-server-10.12`  
+  Another example:  
+  `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" install postgresql10-odbc-10.03.0000-1PGDG.rhel7`  
   **Note:** Take the package base name (e.g. "postgresql10-server") and then add the version (e.g. "10.12"). See also [here](https://unix.stackexchange.com/questions/151689/how-can-i-instruct-yum-to-install-a-specific-version-of-package-x).
   
