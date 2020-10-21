@@ -4,7 +4,7 @@ title: Subversion
 categories:
   - Tools
 ---
-* [Transition to SSL](http://devwiki/wiki/Subversion_Secure_protocol)
+* Show log history including code changes: `svn log --diff`
 * [List inherited svn properties (and their value)](http://svnbook.red-bean.com/en/1.8/svn.ref.svn.c.proplist.html):  
 `svn proplist --show-inherited-props -v .`  
 * [svn unencrypted password caching on Linux](http://help.collab.net/index.jsp?topic=/faq/cachepassword.html):  
