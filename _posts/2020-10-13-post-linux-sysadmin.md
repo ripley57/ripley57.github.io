@@ -16,6 +16,7 @@ categories:
   * List all services: `systemctl list-unit-files | grep -i postgres`    
   * Example config file path: `/usr/lib/systemd/system/MFSafeNet.service`
 * **yum**:
+  * [Yum cheatsheet](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
   * List all available versions of each package, rather than the most recent version:  
   `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" list available`
   * Install a package version that is not the most recent:  
