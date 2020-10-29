@@ -11,6 +11,10 @@ categories:
   * See child processes: `pstree -pa` (see also `/proc/<parent-pid>/task/`)
 * **shared memory**:  
   * [ipcs command](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/tuning_and_optimizing_red_hat_enterprise_linux_for_oracle_9i_and_10g_databases/sect-oracle_9i_and_10g_tuning_guide-setting_shared_memory-removing_shared_memory)
+* signals:
+  * https://www-uxsup.csx.cam.ac.uk/courses/moved.Building/signals.pdf
+  * SIGABRT (6): The program called the abort() function. This is an emergency stop.
+  * SIGSEGV (11): An attempt was made to access memory not allocated to the process. This is often caused by reading off the end of arrays etc.
 * **strace**:  
   * Follow child processes (-ff), capture child process output in separate files (-o), and don't truncate the strings (-v -s 1024):      
   `strace -v -s 1024 -o test -ff casstart /rTPCCDBFH /uSYSAD /pSYSAD`  
