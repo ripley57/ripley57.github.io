@@ -5,10 +5,8 @@ categories:
   - Linux
 ---
 * Extract "hel" character range from variable:  
-```
-s1="hello world"
-echo ${s1:0:3}
-```
+`s1="hello world"`  
+`echo ${s1:0:3}`  
 * [Built-in variables (including the current function name)](http://tldp.org/LDP/abs/html/internalvariables.html)
 * [Sort an array in bash](https://stackoverflow.com/questions/7442417/how-to-sort-an-array-in-bash)
 * [Use process redirection (to log output to multiple places)](https://www.linuxjournal.com/content/shell-process-redirection):  
