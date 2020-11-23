@@ -11,4 +11,5 @@ categories:
   * Different ways to generate an md5 checksum:  
   `d:\sysinternals\sigcheck.exe -h c:\temp\appurl.exe`    
   `certutil.exe -hashfile c:\temp\appurl.exe md5` 
+* SSH client (tabbed and with sftp client and XWindows server): https://mobaxterm.mobatek.net/
 * [Tree Size (free) download](https://www.jam-software.com/treesize_free)
