@@ -8,6 +8,8 @@ categories:
 * [Adding specific access (least privilege model)](https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/)
 * [Optimization and Tuning](https://wiki.postgresql.org/wiki/Performance_Optimization)
 * [Downloads](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+* See config values:  
+`psql -U postgres postgres -c "show all;" | grep cost`  
 * Version:  
 `C:\>psql --version`  
 `psql (PostgreSQL) 10.11`
