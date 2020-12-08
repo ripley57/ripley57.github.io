@@ -13,12 +13,11 @@ categories:
 * Version:  
 `C:\>psql --version`  
 `psql (PostgreSQL) 10.11`
-* Locate main config file:  
-`psql -U postgres`  
-`postgres=# show config_file;`  
+* Locate main config file:    
+`PGPASSWORD=fred psql -U escc postgres -c "show config_file;"`  
 `config_file`  
 `----------------------------------------`    
-`/var/lib/pgsql/12/data/postgresql.conf`  
+`/var/lib/pgsql/10/data/postgresql.conf`  
 * Locate hba (host-based-authentication) file:  
 `psql -U postgres`  
 `postgres=# show hba_file`  
