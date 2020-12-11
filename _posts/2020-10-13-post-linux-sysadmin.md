@@ -17,6 +17,8 @@ categories:
   * Example config file path: `/usr/lib/systemd/system/MFSafeNet.service`
 * **yum**:
   * [Yum cheatsheet](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
+  * List files in an uninstalled package:  
+  `yum repoquery --list postgresql12-contrib.x86_64`  
   * List all available versions of each package, rather than the most recent version:  
   `yum --showduplicates --disablerepo="*" --enablerepo="pgdg10" list available`
   * Install a package version that is not the most recent:  
