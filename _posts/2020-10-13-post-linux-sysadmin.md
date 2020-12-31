@@ -13,7 +13,7 @@ categories:
   * Install an rpm, and automatically install any dependencies (via yum): `yum --nogpgcheck localinstall VirtualBox-6.1-6.1.12_139181_el8-1.x86_64.rpm` 
 * **systemd**:  
   * Debug service startup faiure: `journalctl -xe -u redis`
-  * List all services: `systemctl list-unit-files | grep -i postgres`    
+  * List all services: `systemctl list-unit-files | grep -i postgres` or `sudo systemctl list-units --type=service`
   * Example config file path: `/usr/lib/systemd/system/MFSafeNet.service`
 * **yum**:
   * [Yum cheatsheet](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
