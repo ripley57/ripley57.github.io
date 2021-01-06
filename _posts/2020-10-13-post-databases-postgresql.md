@@ -8,6 +8,7 @@ categories:
 * [Adding specific access (least privilege model)](https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/)
 * [Optimization and Tuning](https://wiki.postgresql.org/wiki/Performance_Optimization)
 * [Downloads](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+* [PG transactions (xact_commit and xact_rollback)](https://www.tutorialspoint.com/postgresql/postgresql_transactions.htm)
 * See config values:  
 `psql -U postgres postgres -c "show all;" | grep cost`  
 * Version:  
