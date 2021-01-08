@@ -33,10 +33,6 @@ Colin: "To see what the connections to the database are, can you run the followi
 `\q`  
 * List databaases from pg_database:
 ```
-postgres=# select datname from pg_databases;
-ERROR:  relation "pg_databases" does not exist
-LINE 1: select datname from pg_databases;
-                            ^
 postgres=# select datname from pg_database;
            datname
 ------------------------------
