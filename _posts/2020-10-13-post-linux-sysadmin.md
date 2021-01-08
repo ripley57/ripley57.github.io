@@ -5,6 +5,8 @@ categories:
   - Linux
 ---
 * [Cron](https://opensource.com/article/17/11/how-use-cron-linux)
+* [LD_LIBRARY_PATH - update for system services](https://unix.stackexchange.com/questions/46614/how-to-export-ld-library-path-to-all-users-and-system-services):
+Add the directory to /etc/ld.so.conf or a new file in /etc/ld.so.conf.d/, depending on distro. After that, you must run (at least on Redhat) ldconfig as root.
 * **rpm**:  
   * List installed packages: `rpm -qa`
   * List files in an **uninstalled** rpm: `rpm -qpl ./BaseOS/Packages/yum-utils-4.0.8-3.el8.noarch.rpm`  
