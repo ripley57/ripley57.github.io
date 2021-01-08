@@ -31,6 +31,24 @@ Colin: "To see what the connections to the database are, can you run the followi
 `psql -U postgres`  
 `\list`  
 `\q`  
+* List databaases from pg_database:
+```
+postgres=# select datname from pg_databases;
+ERROR:  relation "pg_databases" does not exist
+LINE 1: select datname from pg_databases;
+                            ^
+postgres=# select datname from pg_database;
+           datname
+------------------------------
+ postgres
+ template1
+ template0
+ MicroFocus$CAS$CrossRegion
+ MicroFocus$CAS$Region$MYPAC
+ MicroFocus$SEE$Files$VSAM
+ MicroFocus$CAS$Region$MYPAC2
+(7 rows)
+```
 * Drop database example:  
 `postgres=# drop database "MicroFocus$SEE$Files$VSAM2";`  
 * [pgpass.conf](https://www.postgresql.org/docs/9.1/libpq-pgpass.html):  
