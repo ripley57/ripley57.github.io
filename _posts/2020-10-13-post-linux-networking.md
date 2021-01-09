@@ -14,4 +14,6 @@ categories:
   `tcpdump dst port 6742`  
 * SSH:  
   * [Configure password-less login (sshkeygen)](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-centos7):  
-  tbd
+  Create public/private keypair: `sshkeygen` (Note: Press Return for all questions, including passphrase. Not the most secure, but hey).  
+  Copy the public key to the machine(s) you want to log into: `ssh-copy-id nwb-jcdccentos2`  
+  You can now login with using a password: (as user ansible): `ssh nwb-jcdccentos2`
