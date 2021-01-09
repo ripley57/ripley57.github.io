@@ -12,3 +12,6 @@ categories:
   server: `nc -l -p <port>`
 * [tcpdump](https://danielmiessler.com/study/tcpdump/):   
   `tcpdump dst port 6742`  
+* SSH:  
+  * [Configure password-less login (sshkeygen)](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-centos7):  
+  tbd
