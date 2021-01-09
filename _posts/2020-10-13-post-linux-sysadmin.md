@@ -6,7 +6,7 @@ categories:
 ---
 * User accounts:  
   * [Add user to sudoers](https://linuxize.com/post/how-to-add-user-to-sudoers-in-centos/)  
-  Add user to wheel group: (run this as root) `usermod -aG wheel username`. Now log in again as `username` and run `groups` command.  
+  One method is to add the user to wheel group: `# usermod -aG wheel username`. Now log in again as `username` and run `groups` command.  
   * Create group: `sudo groupadd ansible`
   * [Create user (also add user to sudoers via `wheel` group membership)](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/):  
   `sudo useradd -g ansible -G wheel ansible`  
