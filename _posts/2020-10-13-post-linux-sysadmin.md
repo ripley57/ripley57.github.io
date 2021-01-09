@@ -6,7 +6,7 @@ categories:
 ---
 * User accounts:  
   * [Add user to sudoers](https://linuxize.com/post/how-to-add-user-to-sudoers-in-centos/)  
-  Add user to wheel group: `usermod -aG wheel username`  
+  Add user to wheel group: (run this as root) `usermod -aG wheel username`. Now log in again as `username` and run `groups` command.  
 * [Cron](https://opensource.com/article/17/11/how-use-cron-linux)
 * [LD_LIBRARY_PATH - how to update for a system service](https://unix.stackexchange.com/questions/46614/how-to-export-ld-library-path-to-all-users-and-system-services):
 Add the directory to /etc/ld.so.conf or a new file in /etc/ld.so.conf.d/, depending on distro. After that, you must run (at least on Redhat) ldconfig as root.
