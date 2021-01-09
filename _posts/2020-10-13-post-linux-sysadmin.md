@@ -10,7 +10,7 @@ categories:
   * Create group: `sudo groupadd ansible`
   * [Create user (also add user to sudoers via `wheel` group membership)](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/):  
   `sudo useradd -g ansible -G wheel ansible`  
-  * Set password
+  * Set password: `passwd ansible`
 * [Cron](https://opensource.com/article/17/11/how-use-cron-linux)
 * [LD_LIBRARY_PATH - how to update for a system service](https://unix.stackexchange.com/questions/46614/how-to-export-ld-library-path-to-all-users-and-system-services):
 Add the directory to /etc/ld.so.conf or a new file in /etc/ld.so.conf.d/, depending on distro. After that, you must run (at least on Redhat) ldconfig as root.
