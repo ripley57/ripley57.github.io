@@ -5,6 +5,7 @@ categories:
   - Tools
 ---
 * Show log history including code changes: `svn log --diff`
+* Revert add'ed documents: `svn revert`
 * [List inherited svn properties (and their value)](http://svnbook.red-bean.com/en/1.8/svn.ref.svn.c.proplist.html):  
 `svn proplist --show-inherited-props -v .`  
 * [svn unencrypted password caching on Linux](http://help.collab.net/index.jsp?topic=/faq/cachepassword.html):  
