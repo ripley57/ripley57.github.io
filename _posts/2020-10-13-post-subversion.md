@@ -22,3 +22,5 @@ Example file: `/home/hub/.subversion/auth/svn.simple/65b1be3cfa4a989d76fe9c3b14b
 Note: We don't seem to be using `svn propset svn:executable ON compcob`, which means executable permission is not preserved. See [here](https://stackoverflow.com/questions/5757293/proper-way-to-add-svnexecutable/5757365)  
 * [Resolving conflicts](https://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-dug-conflicts.html)  
 **Note:** Using Tortoise "Resolve" does not commit anything. It should be enough to remove the "conflict" icon in Windows. 
+* Creating a branch:  
+`svn copy http://nwb-svn/mf/old/estest/trunk http://nwb-svn/mf/old/estest/branches/XXXXXXXXX -m"New branch"`
