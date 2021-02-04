@@ -54,6 +54,8 @@ Note: pgpass.conf simply provides the password for you.
 * [dump database](https://www.linode.com/docs/databases/postgresql/how-to-back-up-your-postgresql-database/):  
 `set PGUSER=postgres`  
 `pg_dump "MicroFocus$CAS$CrossRegion" > crossregion.bak`  
+  Another example:  
+ `/usr/pgsql-10/bin/pg_dump -U escc -W -F t 'MicroFocus$SEE$Files$MLVSAM' > MLVSAM.tar`  
 * [Restore database dump](https://www.linode.com/docs/databases/postgresql/how-to-back-up-your-postgresql-database/):  
 `postgres=# create database "MicroFocus$CAS$CrossRegion";`  
 `set PGUSER=postgres`  
