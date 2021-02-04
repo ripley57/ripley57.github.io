@@ -60,5 +60,6 @@ Note: pgpass.conf simply provides the password for you.
 `postgres=# create database "MicroFocus$CAS$CrossRegion";`  
 `set PGUSER=postgres`  
 `psql "MicroFocus$CAS$CrossRegion" < crossregion.bak`  
+See [here](https://www.postgresqltutorial.com/postgresql-backup-database/)  
 * [Add a user](https://stackoverflow.com/questions/5189026/how-to-add-a-user-to-postgresql-in-windows)
     
