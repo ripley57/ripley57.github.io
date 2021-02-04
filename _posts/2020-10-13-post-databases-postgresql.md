@@ -52,14 +52,11 @@ Note: pgpass.conf simply provides the password for you.
 `C:\>type %APPDATA%\postgresql\pgpass.conf`  
 `localhost:5432:*:postgres:Passport1!`
 * [dump database](https://www.linode.com/docs/databases/postgresql/how-to-back-up-your-postgresql-database/):  
-`set PGUSER=postgres`  
-`pg_dump "MicroFocus$CAS$CrossRegion" > crossregion.bak`  
-  Another example:  
  `/usr/pgsql-10/bin/pg_dump -U escc -W -F t 'MicroFocus$SEE$Files$MLVSAM' > MLVSAM.tar`  
+See [here](https://www.postgresqltutorial.com/postgresql-backup-database/)  
 * [Restore database dump](https://www.linode.com/docs/databases/postgresql/how-to-back-up-your-postgresql-database/):  
 `postgres=# create database "MicroFocus$CAS$CrossRegion";`  
 `set PGUSER=postgres`  
 `psql "MicroFocus$CAS$CrossRegion" < crossregion.bak`  
-See [here](https://www.postgresqltutorial.com/postgresql-backup-database/)  
 * [Add a user](https://stackoverflow.com/questions/5189026/how-to-add-a-user-to-postgresql-in-windows)
     
