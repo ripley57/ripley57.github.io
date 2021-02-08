@@ -55,4 +55,4 @@ Note: pgpass.conf simply provides the password for you.
 NOTE: The pg_restore command is very confusing!!! If you are importing the backup archive into the same database, then you need to use "--dbname=postgres". This is because the name of the database being restored is actually in  the archive file. But, if you want to import the backup archive into a differently-named database, then you use "--dbname==<newdbname>", but you will have to create the database first yourself!  
 See my script `pg_backup.sh`    
 * [Add a user](https://stackoverflow.com/questions/5189026/how-to-add-a-user-to-postgresql-in-windows)
-    
+* [PG Replication status](https://stackoverflow.com/questions/43388243/check-postgres-replication-status)    
