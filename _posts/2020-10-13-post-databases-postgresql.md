@@ -51,12 +51,9 @@ postgres=# select datname from pg_database;
 Note: pgpass.conf simply provides the password for you.  
 `C:\>type %APPDATA%\postgresql\pgpass.conf`  
 `localhost:5432:*:postgres:Passport1!`
-* [dump database](https://www.linode.com/docs/databases/postgresql/how-to-back-up-your-postgresql-database/):  
- `/usr/pgsql-10/bin/pg_dump -U escc -W -F t 'MicroFocus$SEE$Files$MLVSAM' > MLVSAM.tar`  
-See [here](https://www.postgresqltutorial.com/postgresql-backup-database/)  
-* [Restore database dump](https://www.linode.com/docs/databases/postgresql/how-to-back-up-your-postgresql-database/):  
-`postgres=# create database "MicroFocus$CAS$CrossRegion";`  
-`set PGUSER=postgres`  
-`psql "MicroFocus$CAS$CrossRegion" < crossregion.bak`  
+* [dump single database](https://www.postgresqltutorial.com/postgresql-backup-database/):  
+`/usr/pgsql-10/bin/pg_dump -U escc -W -F t 'MicroFocus$SEE$Files$MLVSAM' > MLVSAM.tar`  
+* [Restore single database dump](https://www.postgresqltutorial.com/postgresql-restore-database/):    
+`/usr/pgsql-10/bin/pg_restore -U escc --dbname='MicroFocus$SEE$Files$MLVSAM' --clean MLVSAM.tar`    
 * [Add a user](https://stackoverflow.com/questions/5189026/how-to-add-a-user-to-postgresql-in-windows)
     
