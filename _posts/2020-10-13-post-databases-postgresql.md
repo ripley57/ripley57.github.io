@@ -45,8 +45,6 @@ postgres=# select datname from pg_database;
  MicroFocus$CAS$Region$MYPAC2
 (7 rows)
 ```
-* Drop database example:  
-`postgres=# drop database "MicroFocus$SEE$Files$VSAM2";`  
 * [pgpass.conf](https://www.postgresql.org/docs/9.1/libpq-pgpass.html):  
 Note: pgpass.conf simply provides the password for you.  
 `C:\>type %APPDATA%\postgresql\pgpass.conf`  
@@ -54,21 +52,7 @@ Note: pgpass.conf simply provides the password for you.
 * [dump single database](https://www.postgresqltutorial.com/postgresql-backup-database/):  
 `/usr/pgsql-10/bin/pg_dump -U escc -W -F t 'MicroFocus$SEE$Files$MLVSAM' > MLVSAM.tar`  
 * [Restore single database dump](https://www.postgresqltutorial.com/postgresql-restore-database/):  
-NOTE: The pg_restore command is very confusing!!!  
-If you are importing the backup archive into the same database, then you need to use "--dbname=postgres". This is because the database name is in the archive you are restoring. But, if you want to import the backup archive into a differently-named database, then you use "--dbname==<newdbname>", but you will have to create the database first yourself before you import the archive!. So...    
-  * To import a backup archive into the same database name...     
-  The following will work, but only if the database does not exist yet:   
-  `/usr/pgsql-10/bin/pg_restore -U escc --dbname=postgres --create MLVSAM.tar`  
-  If the database already exists, you will get many "...already exists" errors.    
-  To first remove the database, you can use the "--clean" option. However, you will see a few scary (but apparently harmless) errors/warnings (see [here](https://dba.stackexchange.com/questions/90258/pg-restore-archiver-db-could-not-execute-query-error-schema-public-alre) for more info). For example:  
-  `pg_restore: [archiver (db)] Error while PROCESSING TOC:`  
-  You can either accept these errors, or drop the database explicitly first:      
-  `/usr/pgsql-10/bin/psql -U escc postgres -c 'drop database "MicroFocus$SEE$Files$MLVSAM"'`  
-  * To import the backup archive into a differently-named database, you do NOT specify the "postgres" database:     
-  `/usr/pgsql-10/bin/pg_restore -U escc --dbname='MicroFocus$SEE$Files$MLVSAM' --clean MLVSAM.tar`  
-  But, first you'll need to create the database:  
-  `/usr/pgsql-10/bin/psql -U escc postgres -c 'create database "MicroFocus$SEE$Files$MLVSAM"'`  
-  But that seems to give some errors 
-  To summarise: See my script https://nwb-svn/mf/old/testware/TPCC/TPCC_PAC/linux/scripts/pg_backup.sh  
+NOTE: The pg_restore command is very confusing!!! If you are importing the backup archive into the same database, then you need to use "--dbname=postgres". This is because the name of the database being restored is actually in  the archive file. But, if you want to import the backup archive into a differently-named database, then you use "--dbname==<newdbname>", but you will have to create the database first yourself!  
+See my script `pg_backup.sh`    
 * [Add a user](https://stackoverflow.com/questions/5189026/how-to-add-a-user-to-postgresql-in-windows)
     
