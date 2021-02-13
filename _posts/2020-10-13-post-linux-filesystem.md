@@ -14,3 +14,6 @@ categories:
 0000000000010220 T PQconninfoFree
 00000000000118b0 T PQconninfoParse
 ```
+* rsync
+  * Exclude directory: `https://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/`  
+  (See [here](https://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/)  
