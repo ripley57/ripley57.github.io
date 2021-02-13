@@ -18,7 +18,7 @@ categories:
 * **strace**:  
   * Follow child processes (-ff), capture child process output in separate files (-o), and don't truncate the strings (-v -s 1024):      
   `strace -v -s 1024 -o test -ff casstart /rTPCCDBFH /uSYSAD /pSYSAD`  
-* **sysctl**:  
+* **sysctl** (configure kernel parameters at runtime):    
   * [Updating /etc/sysctl.conf](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/kernel_administration_guide/working_with_sysctl_and_kernel_tunables):  
   1. Use `sysctl -a` to get the full name.  
   2. Add the new value to `/etc/sysctl.d/99-custom.conf` (Note: On my system, this is a symbolic link to `/etc/sysctl.conf`).  
@@ -31,7 +31,7 @@ categories:
   * Soft and Hard limits:  
   `# ulimit -u -S`  
   `# ulimit -u -H`  
-  [Nice examples (from Oracle server installation steps)](https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/checking-resource-limits-for-oracle-software-installation-users.html#GUID-293874BD-8069-470F-BEBF-A77C06618D5A)  
-  The general procedure requires editing `/etc/security/limits.conf` (and/orr files in `/etc/security/limits.d`) and then running `sysctl -p`  
-  [Names of common items to change](https://www.thegeekdiary.com/understanding-etc-security-limits-conf-file-to-set-ulimit/)  
+[Nice examples (from Oracle server installation steps)](https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/checking-resource-limits-for-oracle-software-installation-users.html#GUID-293874BD-8069-470F-BEBF-A77C06618D5A)  
+The general procedure requires editing `/etc/security/limits.conf` (and/orr files in `/etc/security/limits.d`) and then running `sysctl -p`  
+[Names of common items to change](https://www.thegeekdiary.com/understanding-etc-security-limits-conf-file-to-set-ulimit/)  
  
