@@ -31,6 +31,7 @@ categories:
   * Soft and Hard limits:  
   `# ulimit -u -S`  
   `# ulimit -u -H`  
-  * Increase open files limit (for the current shell): `ulimit -n 4096`  
-  * Using prlimit to check the limit (e.g. useful in a script): `prlimit -n -p $$ --noheadings -o SOFT`  
-  
+  [Nice examples (from Oracle server installation steps)](https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/checking-resource-limits-for-oracle-software-installation-users.html#GUID-293874BD-8069-470F-BEBF-A77C06618D5A)  
+  The general procedure requires editing `/etc/security/limits.conf` (and/orr files in `/etc/security/limits.d`) and then running `sysctl -p`  
+  [Names of common items to change](https://www.thegeekdiary.com/understanding-etc-security-limits-conf-file-to-set-ulimit/)  
+ 
