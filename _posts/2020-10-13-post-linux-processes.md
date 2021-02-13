@@ -28,10 +28,10 @@ categories:
   `Uid: 0 0 0 0`  
   `Gid: 1 1 1 1`       
 * **ulimit**:  
-  * Soft and Hard limits:  
-  `# ulimit -u -S`  
-  `# ulimit -u -H`  
-[Nice examples (from Oracle server installation steps)](https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/checking-resource-limits-for-oracle-software-installation-users.html#GUID-293874BD-8069-470F-BEBF-A77C06618D5A)  
-The general procedure requires editing `/etc/security/limits.conf` (and/orr files in `/etc/security/limits.d`) and then running `sysctl -p`  
+  * Soft and Hard limits:    
+  # ulimit -u -S`  
+  # ulimit -u -H`  
+  * [Nice examples (from Oracle server installation steps)](https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/checking-resource-limits-for-or8 acle-software-installation-users.html#GUID-293874BD-8069-470F-BEBF-A77C06618D5A)  
+  * The general procedure requires editing `/etc/security/limits.conf` (and/orr files in `/etc/security/limits.d`) and then running `sysctl -p`  
 [Names of common items to change](https://www.thegeekdiary.com/understanding-etc-security-limits-conf-file-to-set-ulimit/)  
  
