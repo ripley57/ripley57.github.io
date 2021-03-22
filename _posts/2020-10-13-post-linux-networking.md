@@ -12,6 +12,9 @@ categories:
   server: `nc -l -p <port>`
 * [tcpdump](https://danielmiessler.com/study/tcpdump/):   
   `tcpdump dst port 6742`  
+* Red Hat networking interface setup:
+  * https://www.redhat.com/sysadmin/start-nic-boot
+  * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s1-networkscripts-interfaces
 * SSH:  
   * [Configure password-less login (sshkeygen)](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-centos7):  
   Create public/private keypair: `ssh-keygen` (Note: Press Return for all questions, including passphrase. Not the most secure, but hey).  
