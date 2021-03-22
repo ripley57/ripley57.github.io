@@ -63,3 +63,4 @@ See my script `pg_backup.sh`
   # alter user escc with SUPERUSER CREATEDB REPLICATION;
   ```
 * [PG Replication status](https://stackoverflow.com/questions/43388243/check-postgres-replication-status)    
+* [Vacuum and analyze (includes query to show last of both)](https://www.lob.com/blog/supercharge-your-postgresql-performance)
