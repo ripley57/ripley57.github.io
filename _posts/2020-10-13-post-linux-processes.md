@@ -34,4 +34,8 @@ categories:
   * [Nice examples (from Oracle install)](https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/checking-resource-limits-for-oracle-software-installation-users.html#GUID-293874BD-8069-470F-BEBF-A77C06618D5A)   
   * General procedure: edit `/etc/security/limits.conf` (and/or files in `/etc/security/limits.d`) and then run `sysctl -p`    
   * [Names of common items to change](https://www.thegeekdiary.com/understanding-etc-security-limits-conf-file-to-set-ulimit/)  
- 
+  * Check used network socket counts using lsof:  
+  `[nwb-tpccrh76es2-hub]asroot lsof -a -U -uhub |wc -l`  
+  `17`  
+  `[nwb-tpccrh76es2-hub]for i in {1..1000}; do curl localhost:8222/esmac/casrdo00 >nul 2>&1; done`  
+  `[nwb-tpccrh76es2-hub]asroot lsof -a -U -uhub |wc -l`  
