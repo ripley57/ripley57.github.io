@@ -20,6 +20,7 @@ categories:
 * **strace**:  
   * Follow child processes (-ff), capture child process output in separate files (-o), and don't truncate the strings (-v -s 1024):      
   `strace -v -s 1024 -o test -ff casstart /rTPCCDBFH /uSYSAD /pSYSAD`  
+  See also: https://www.thegeekstuff.com/2011/11/strace-examples/  
 * **sysctl** (configure kernel parameters at runtime):    
   * [Updating /etc/sysctl.conf](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/kernel_administration_guide/working_with_sysctl_and_kernel_tunables):  
   1. Use `sysctl -a` to get the full name.  
