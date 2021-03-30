@@ -41,3 +41,9 @@ categories:
   `17`  
   `[nwb-tpccrh76es2-hub]for i in {1..1000}; do curl localhost:8222/esmac/casrdo00 >nul 2>&1; done`  
   `[nwb-tpccrh76es2-hub]asroot lsof -a -U -uhub |wc -l`  
+* gdb:
+  * Attach: `gdb -p <pid>`  
+  * List threads: `(gdb) info threads`  
+  * Switch to thread: `(gdb) thread <num>`  
+  * Show strack trac: `(gdb) backtrace`  
+  
