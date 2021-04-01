@@ -28,6 +28,8 @@ categories:
   `robocopy \\nwb-xtest\c$\Inetpub\wwwroot\ C:\Inetpub\wwwroot\ /COPY:DT /DCOPY:DT /E /XD "aspnet_client" /XF "iisstart.htm"`  
   * Mirroring svn files (exclude ".svn" dirs, creation "C:\automation" dir, don't list folder names:  
   `robocopy \\nwb-xtest\c$\automation\ C:\automation /MIR /COPY:DAT /DCOPY:DAT /E /XD ".svn" /NDL`
+  * My MF directory clone, but minus the .git folder:  
+  `robocopy C:\Users\jclough\git\MF D:\MF /MIR /COPY:DT /DCOPY:DT /E /XD C:\Users\jclough\git\MF\.git`  
 * SMB:  
   * [SMB1 decprecated by Windows (Note: Windows Server 2003 only supports SMB1)](https://blogs.technet.microsoft.com/josebda/2015/04/21/the-deprecation-of-smb1-you-should-be-planning-to-get-rid-of-this-old-smb-dialect/)  
 Note: If you need to add support for the SMBv1 protocol client-side, use appwiz.cpl and add/remove features.  
