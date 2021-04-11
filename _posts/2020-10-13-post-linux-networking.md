@@ -4,7 +4,18 @@ title: Linux Networking
 categories:
   - Networking
 ---
-* Curl:
+* "arp" command:
+  * ARP (Address Resolution Protocol) relates a host's IP address to the hardware address (MAC address) assigned to your network adapter.
+  * Use "ping" (to populate the arp tables) and then use "arp" to see the MAC address, e.g.:  
+  `lcdc@E1317T:~$ ping 192.168.1.254`  
+  `...`  
+  `jcdc@E1317T:~$ arp 192.168.1.254`  
+  `Address                  HWtype  HWaddress           Flags Mask            Iface`  
+  `_gateway                 ether   5c:b1:3e:1c:5f:42   C                     wlp1s0`  
+* "ip" command:  
+  * List interfaces: `ip addr`  
+  * Enable/disable interface: `ip link set up|down dev enp2s0`  
+* Curl:  
   * [download](https://curl.haxx.se/download.html)
   * CICSWS example (see URIMAP etc and "CICWS Repro steps.txt"):  
   `C:\curl\curl\bin\curl.exe -v -X POST localhost:9233/tpccws/NewOrder -H "Content-Type: text/xml;charset=UTF-8" --data-binary "@C:/curl/New_Order_request.txt"`  
