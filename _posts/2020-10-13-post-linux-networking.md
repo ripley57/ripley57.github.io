@@ -12,6 +12,8 @@ categories:
   `jcdc@E1317T:~$ arp 192.168.1.254`  
   `Address                  HWtype  HWaddress           Flags Mask            Iface`  
   `_gateway                 ether   5c:b1:3e:1c:5f:42   C                     wlp1s0`  
+* "dig" DNS lookups:
+  * Dig is useful because you can target a specific DNS server, e.g.: `dig @8.8.8.8 www.amazon.com`   
 * "ip" command:  
   * List interfaces: `ip addr`  
   * Enable/disable interface: `ip link set up|down dev enp2s0`  
