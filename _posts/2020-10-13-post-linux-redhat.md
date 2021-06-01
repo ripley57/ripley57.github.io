@@ -10,4 +10,6 @@ categories:
 * Network configuration GUI: `nmtui`  
   * If you edit the details of an interface (E.g. the search domains for ens192), then it will update a file such as: `sysconfig/network-scripts/ifcfg-ens192`  
   * To re-generate `/etc/resolv.conf` after updating the search domains, you can run this: `asroot ifdown ifcfg-ens192 ; asroot ifup ifcfg-ens192`
+  * If `ifup ...` fails, you can try `asroot nmcli device connnect ens192`
 * Version: `cat /etc/os-release`
+
