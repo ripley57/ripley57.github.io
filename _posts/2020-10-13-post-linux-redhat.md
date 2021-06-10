@@ -12,4 +12,4 @@ categories:
   * To re-generate `/etc/resolv.conf` after updating the search domains, you can run this: `asroot ifdown ifcfg-ens192 ; asroot ifup ifcfg-ens192`
   * If `ifup ...` fails, you can try `asroot nmcli device connnect ens192`
 * Version: `cat /etc/os-release`
-
+* Check network status: `asroot systemctl -l status network.service`  
