@@ -24,6 +24,8 @@ categories:
   ```
   To test, running `sudo id` should return `root`  
 * [Cron](https://opensource.com/article/17/11/how-use-cron-linux)
+* ps
+  * Seeing all of the command-line: `ps auxww | grep java`
 * System-wide LD_LIBRARY_PATH update:
   * [LD_LIBRARY_PATH - how to update for a system service](https://unix.stackexchange.com/questions/46614/how-to-export-ld-library-path-to-all-users-and-system-services):
 Add the directory to /etc/ld.so.conf or a new file in /etc/ld.so.conf.d/, depending on distro. After that, you must run (at least on Redhat) ldconfig as root. 
