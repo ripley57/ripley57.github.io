@@ -4,6 +4,8 @@ title: Linux Sysadmin
 categories:
   - Linux
 ---
+* alternatives command (e.g. to set to a specific default Java version)
+  * `sudo alternative --config java` 
 * User accounts:  
   * [Add user to sudoers](https://linuxize.com/post/how-to-add-user-to-sudoers-in-centos/)  
   One method is to add the user to wheel group: `# usermod -aG wheel username`. Now log in again as `username` and run `groups` command.  
