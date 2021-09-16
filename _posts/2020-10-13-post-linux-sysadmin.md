@@ -42,6 +42,9 @@ Add the directory to /etc/ld.so.conf or a new file in /etc/ld.so.conf.d/, depend
   * Debug service startup faiure: `journalctl -xe -u redis`
   * List all services: `systemctl list-unit-files | grep -i postgres` or `sudo systemctl list-units --type=service`
   * Example config file path: `/usr/lib/systemd/system/MFSafeNet.service`
+* **top**:
+  * top -c and 200% cpu! (type shift+i to see shared per-cpu core usage): See [here](https://unix.stackexchange.com/questions/145247/understanding-cpu-while-running-top-command)
+  * Filter top output by process name: `asroot top -c -p $(pgrep -d',' -f cascd)` (see [here](https://stackoverflow.com/questions/12075591/top-c-command-in-linux-to-filter-processes-listed-based-on-processname)
 * **yum**:
   * [Yum cheatsheet](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
   * List files in an uninstalled package:  
