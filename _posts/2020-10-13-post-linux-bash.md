@@ -32,3 +32,11 @@ categories:
 `        done`  
 `}`  
 `update_files`  
+* "set" command:    
+`#!/bin/ksh`  
+`echo "Input args: $@"`  
+`echo "Args count: $#"`  
+`echo "Adding another arg..."`  
+`set -- $@ wibble`  
+`echo "New input args: $@"`  
+`echo "New args count: $#"`  
