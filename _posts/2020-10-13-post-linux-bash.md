@@ -16,3 +16,19 @@ categories:
 `exec > >(tee /tmp/test.log | logger -t user-data -s) 2>&1`  
 `echo "Send to stderr. This will be logged to a file, syslog, and the screen $(date)" >&2`  
 `echo "Send to stdout. This will be logged to a file, syslog, and the screen $(date)"`  
+* Bash arrays:  
+`#!/usr/bin/bash`  
+`declare -a HOSTS_ARRAY=('nwb-tpccrh76es1' 'nwb-tpccrh76es2' 'nwb-tpccrh76es3' 'nwb-mlora1' 'nwb-mlora2' 'nwb-mlora3');`  
+`declare -a FILES_ARRAY=('lib/mfescache.jar');`  
+`function update_files()`  
+`{`  
+`        local _host _file`  
+``  
+`        for _host in "${HOSTS_ARRAY[@]}" ; do`  
+`                for _file in "${FILES_ARRAY[@]}" ; do`  
+`                  echo "scp -p $_file hub@${_host}:/home1/hub/pkg-es/$_file"`  
+`                  scp -p $_file hub@${_host}:/home1/hub/pkg-es/$_file`  
+`               done`  
+`        done`  
+`}`  
+`update_files`  
