@@ -22,7 +22,7 @@ categories:
 `declare -a FILES_ARRAY=('lib/mfescache.jar');`  
 `function update_files()`  
 `{`  
-`        local _host _file`  
+`        local _host _file`    
 ``  
 `        for _host in "${HOSTS_ARRAY[@]}" ; do`  
 `                for _file in "${FILES_ARRAY[@]}" ; do`  
