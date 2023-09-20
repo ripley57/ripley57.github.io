@@ -30,7 +30,7 @@ Modify: 2023-09-20 09:58:38.000000000 +0100
 Change: 2023-09-20 10:06:05.316755558 +0100
  Birth: -
 ```
-  * Method 2: "debugfs" (Note this must be run as root) - looks for the "crtime" value (not "ctime"!):  
+    * Method 2: "debugfs" (Note this must be run as root) - looks for the "crtime" value (not "ctime"!):  
 ```
 [wibble]asroot debugfs -R 'stat myfile.txt' /dev/sda2
 debugfs 1.42.9 (28-Dec-2013)
