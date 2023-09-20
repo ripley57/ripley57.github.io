@@ -18,7 +18,6 @@ categories:
   * Exclude directory: `rsync -avz --exclude VirtualBox_VMs /home/jcdc .` (See [here](https://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/))
 * Determine file creation time (see also [here](https://kodekloud.com/blog/file-creation-time-linux/#:~:text=to%20our%20terminal.-,Find%20File%20Creation%20Date%2FTime%20Using%20ls%20Command,creation%20time%20of%20a%20file.))
   * Method 1: "stat filename" - But even on my ext4 filesystem (RH Linux) the "Birth" value was unfortunately blank (apparently, it is down to the kernel if the "Birth" value is populated):
-  * Method 2: wobble  
 ```
 [wibble]stat myfile.txt
   File: '/home/fred/myfile.txt'
@@ -30,7 +29,7 @@ Modify: 2023-09-20 09:58:38.000000000 +0100
 Change: 2023-09-20 10:06:05.316755558 +0100
  Birth: -
 ```
-  * Method 2: "debugfs" (Note this must be run as root) - looks for the "crtime" value (not "ctime"!):  
+  * Method 2: wobble  
 ```
 [wibble]asroot debugfs -R 'stat myfile.txt' /dev/sda2
 debugfs 1.42.9 (28-Dec-2013)
@@ -45,4 +44,6 @@ Fragment:  Address: 0    Number: 0    Size: 0
  mtime: 0x650ab43e:00000000 -- Wed Sep 20 09:58:38 2023
 crtime: 0x650ab5fd:4b0b269c -- Wed Sep 20 10:06:05 2023
 ```  
+  * Method 2: "debugfs" (Note this must be run as root) - looks for the "crtime" value (not "ctime"!):  
+
 
