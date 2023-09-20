@@ -16,7 +16,7 @@ categories:
 ```
 * rsync
   * Exclude directory: `rsync -avz --exclude VirtualBox_VMs /home/jcdc .` (See [here](https://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders/))
-* Determine file creation time (see also [here](https://kodekloud.com/blog/file-creation-time-linux/#:~:text=to%20our%20terminal.-,Find%20File%20Creation%20Date%2FTime%20Using%20ls%20Command,creation%20time%20of%20a%20file.)
+* Determine file creation time (see also [here](https://kodekloud.com/blog/file-creation-time-linux/#:~:text=to%20our%20terminal.-,Find%20File%20Creation%20Date%2FTime%20Using%20ls%20Command,creation%20time%20of%20a%20file.))
   * Method 1: "stat filename":
   Even on an ext4 filesystem (RH Linux), the "Birth" value was blank (apparently, it is down to the kernel if the "Birth" value is populated):
 ```
