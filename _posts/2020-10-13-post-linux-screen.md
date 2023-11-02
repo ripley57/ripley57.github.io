@@ -15,6 +15,7 @@ screen -r my-session
 * [Manual (gnu.org)](https://www.gnu.org/software/screen/manual/html_node/index.html#SEC_Contents)
 * Name session: `screen -S session_name`
 * Name session while using a screenfile: `screen -S sentinel-demo -c ~/scripts/screenfile-sentinel-demo`
+* Re-name the session or window title, from within screen: `ctl+a + shift+a`  
 * Detach: `Ctrl+a` then `d`
 * List sessions: `screen -ls`
 * Re-attach to session: `screen -r <id>`
