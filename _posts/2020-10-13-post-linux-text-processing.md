@@ -11,3 +11,5 @@ categories:
   * Treat binary file as text file: `grep -a data fsstatus.log`
 * **sed**:  
   * sed on a string (not a file) using a here string: `sed "s/,/','/g" <<< "A,B,C"`
+* **sort**
+  * Sort column 3 in CSV file: `sort -t ',' -n -k 3,3 data.csv`  
