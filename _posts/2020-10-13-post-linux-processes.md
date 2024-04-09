@@ -12,7 +12,7 @@ categories:
 * **pstree**:  
   * See child processes: `pstree -pa` (see also `/proc/<parent-pid>/task/`)
 * Redirecting stdout and stderr:
-  * script:
+  * script:  
   `echo "hello world stdout"`  
   `echo "hello world stderr" >&2`  
   `echo "hello world tty"    >/dev/tty`  
