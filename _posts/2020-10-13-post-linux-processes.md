@@ -11,7 +11,7 @@ categories:
   `COBPATH=/home/hub/pkg_260324_es/lib/es`  
 * **pstree**:  
   * See child processes: `pstree -pa` (see also `/proc/<parent-pid>/task/`)
-* Redirecting stdout and stderr:
+* Redirecting to stdout and stderr:
   * script:  
   `echo "hello world stdout"`  
   `echo "hello world stderr" >&2`  
