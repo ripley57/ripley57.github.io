@@ -4,6 +4,8 @@ title: Linux Text Processing
 categories:
   - Linux
 ---
+* **awk**:
+  * Remove some columns: `awk '{$6=$8=""; print $0}' file`  
 * **cut**:  
   * Display first x characters: `cut -c 1-35 <file>`
   * Cut the first x characters: `cut -c 1-35 --completement <file>`
