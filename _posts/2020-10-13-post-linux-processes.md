@@ -11,6 +11,11 @@ categories:
   `COBPATH=/home/hub/pkg_260324_es/lib/es`  
 * **pstree**:  
   * See child processes: `pstree -pa` (see also `/proc/<parent-pid>/task/`)
+* Redirecting stdout and stderr:
+  * script:
+  `echo "hello world stdout"`  
+  `echo "hello world stderr" >&2`  
+  `echo "hello world tty"    >/dev/tty`  
 * **shared memory**:  
   * [ipcs command](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/tuning_and_optimizing_red_hat_enterprise_linux_for_oracle_9i_and_10g_databases/sect-oracle_9i_and_10g_tuning_guide-setting_shared_memory-removing_shared_memory)
 * **signals**:
