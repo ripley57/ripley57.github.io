@@ -36,7 +36,7 @@ Note: If you need to add support for the SMBv1 protocol client-side, use appwiz.
 * Windows symbolic links
   * A "junction" is a link to a target folder.
   Example (using the sysinternals tool "junction.exe"):
-  `junction.exe c:\users\jclough\My_Files "c:\users\jclough\OneDrive - Rocket Software, Inc\My_Files"  
+  `junction.exe c:\users\jclough\My_Files "c:\users\jclough\OneDrive - Rocket Software, Inc\My_Files"`    
   And to later verify that this is a junction:  
   `junction.exe c:\users\jclough\My_Files`  
   `...`  
