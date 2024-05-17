@@ -32,4 +32,13 @@ categories:
   `robocopy C:\Users\jclough\git\MF D:\MF /MIR /COPY:DT /DCOPY:DT /E /XD C:\Users\jclough\git\MF\.git`  
 * SMB:  
   * [SMB1 decprecated by Windows (Note: Windows Server 2003 only supports SMB1)](https://blogs.technet.microsoft.com/josebda/2015/04/21/the-deprecation-of-smb1-you-should-be-planning-to-get-rid-of-this-old-smb-dialect/)  
-Note: If you need to add support for the SMBv1 protocol client-side, use appwiz.cpl and add/remove features.  
+Note: If you need to add support for the SMBv1 protocol client-side, use appwiz.cpl and add/remove features.
+* Windows symbolic links
+  * A "junction" is a link to a target folder.
+  Example (using the sysinternals tool "junction.exe"):
+  `junction.exe c:\users\jclough\My_Files "c:\users\jclough\OneDrive - Rocket Software, Inc\My_Files"  
+  And to later verify that this is a junction:  
+  `junction.exe c:\users\jclough\My_Files`  
+  `...`  
+  `c:\users\jclough\My_Files: JUNCTION`  
+  `   Substitute Name: c:\users\jclough\OneDrive - Rocket Software, Inc\My_Files`  
