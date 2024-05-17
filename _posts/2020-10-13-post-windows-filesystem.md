@@ -30,6 +30,8 @@ categories:
   `robocopy \\nwb-xtest\c$\automation\ C:\automation /MIR /COPY:DAT /DCOPY:DAT /E /XD ".svn" /NDL`
   * My MF directory clone, but minus the .git folder:  
   `robocopy C:\Users\jclough\git\MF D:\MF /MIR /COPY:DT /DCOPY:DT /E /XD C:\Users\jclough\git\MF\.git`  
+  * [Compare the contents of two folders](https://www.howtogeek.com/how-to-compare-two-folders-on-windows-11-and-10/):  
+  `robocopy "Folder1" "Folder2" /L /NJH /NJS /NP /NS`  
 * SMB:  
   * [SMB1 decprecated by Windows (Note: Windows Server 2003 only supports SMB1)](https://blogs.technet.microsoft.com/josebda/2015/04/21/the-deprecation-of-smb1-you-should-be-planning-to-get-rid-of-this-old-smb-dialect/)  
 Note: If you need to add support for the SMBv1 protocol client-side, use appwiz.cpl and add/remove features.
