@@ -5,6 +5,7 @@ categories:
   - Linux
 ---
 * find command:
+  * Exclude a large directory: `find / -path /home1/hub/remote/lexshare -prune -o -user 500 -exec chown -h 1000 {} \;`  
   * Search for multiple file names: `find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.deb" -o -name ".pdf" \)`  
   * Follow symlinks: `find -L $COBDIR -iname ...`
   * find with compex exec: `find . -iname console.log.tr4 -exec sh -c "echo {} && grep 'CASSI5030I PLTPI Phase 2 List(T1) Processing Completed' {} | wc -l" \;`  
